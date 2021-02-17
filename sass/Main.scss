@@ -3,7 +3,15 @@
 
 body{
     background-color: $clr-background;
+	display: flex;
+    justify-content: center;
+
 }
+
+header{
+
+}
+
 /*
 @import "./utils/functions";
 @import "./utils/mixins";

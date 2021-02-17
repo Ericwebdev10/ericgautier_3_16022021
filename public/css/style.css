@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
   background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
 }
 
 /*
