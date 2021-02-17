@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OC-P3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ericwebdev10/ericgautier_3_16022021.git"
+  },
+  "keywords": [
+    "website",
+    "creation"
+  ],
+  "author": "Eric Gautier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ericwebdev10/ericgautier_3_16022021/issues"
+  },
+  "homepage": "https://github.com/Ericwebdev10/ericgautier_3_16022021#readme"
+}

@@ -1,9 +1,8 @@
-
-@import "./utils/variables";
-
-body{
-    background-color: $clr-background;
+@charset "UTF-8";
+body {
+  background-color: #FFFFFF;
 }
+
 /*
 @import "./utils/functions";
 @import "./utils/mixins";
@@ -69,3 +68,5 @@ sass/
 `– main.scss             # Main Sass file
 
 */
+
+/*# sourceMappingURL=style.css.map */
