@@ -1,74 +1,71 @@
-@charset "UTF-8";
+/* roboto-regular - latin */
+@font-face {
+  font-family: "Roboto";
+  src: url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2") format("woff2"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff") format("woff"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf") format("truetype"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  /* Legacy iOS */
+}
+/* shrikhand-regular - latin */
+@font-face {
+  font-family: "Shrikhand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff2") format("woff2"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff") format("woff"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.ttf") format("truetype"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  /* Legacy iOS */
+}
 body {
-  background-color: #FFFFFF;
-  display: flex;
-  justify-content: center;
+  font-family: "Roboto", "Shrikhand", Arial, sans-serif;
 }
 
-/*
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./base/base";
-@import "./base/typography";
-@import "./components/buttons";
-@import "./layouts/header";
-@import "./layouts/nav";
-@import "./layouts/container";
-@import "./layouts/form";
-@import "./pages/work";
-@import "./pages/about";
-@import "./pages/project";
-
-Sass 7-1 Pattern
-sass-7-1-pattern.scss
-sass/
-|
-|– base/
-|   |– _reset.scss       # Reset/normalize
-|   |– _typography.scss  # Typography rules
-|   ...                  # Etc…
-|
-|– components/
-|   |– _buttons.scss     # Buttons
-|   |– _carousel.scss    # Carousel
-|   |– _cover.scss       # Cover
-|   |– _dropdown.scss    # Dropdown
-|   ...                  # Etc…
-|
-|– layout/
-|   |– _navigation.scss  # Navigation
-|   |– _grid.scss        # Grid system
-|   |– _header.scss      # Header
-|   |– _footer.scss      # Footer
-|   |– _sidebar.scss     # Sidebar
-|   |– _forms.scss       # Forms
-|   ...                  # Etc…
-|
-|– pages/
-|   |– _home.scss        # Home specific styles
-|   |– _contact.scss     # Contact specific styles
-|   ...                  # Etc…
-|
-|– themes/
-|   |– _theme.scss       # Default theme
-|   |– _admin.scss       # Admin theme
-|   ...                  # Etc…
-|
-|– utils/
-|   |– _variables.scss   # Sass Variables
-|   |– _functions.scss   # Sass Functions
-|   |– _mixins.scss      # Sass Mixins
-|   |– _helpers.scss     # Class & placeholders helpers
-|
-|– vendors/
-|   |– _bootstrap.scss   # Bootstrap
-|   |– _jquery-ui.scss   # jQuery UI
-|   ...                  # Etc…
-|
-|
-`– main.scss             # Main Sass file
-
-*/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+.header_search__input {
+  background-color: #eaeaea;
+  min-height: 2.5em;
+  text-align: center;
+  border: none;
+  font-size: 1.2em;
+  font-weight: bolder;
+  box-shadow: 0px -3px 3px #c4c4c4;
+  margin-top: 20px;
+}
+.header_search__icon {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.header_h1 {
+  width: 70%;
+  margin-top: 1.5em;
+  font-family: roboto;
+  font-weight: 900;
+  font-size: 1.8em;
+}
+.header_h2 {
+  width: 90%;
+  font-weight: lighter;
+  font-size: 1.3em;
+}
+.header_button {
+  background-color: #9356DC;
+  color: #FFFFFF;
+  height: 3em;
+  font-weight: 700;
+  font-size: 1.3em;
+  border-style: none;
+  border-radius: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
 
 /*# sourceMappingURL=style.css.map */

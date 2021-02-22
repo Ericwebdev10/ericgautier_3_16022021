@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+    margin-top: $header-margin;
+    background-color: $clr-background;
+    text-align: center;    
+    width: 100%;
+    &_search{
+        &__input{
+            background-color: $clr-search-background;
+            min-height: 2.5em;
+            text-align: center;
+            border: none;
+            font-size: 1.2em;
+            font-weight: bolder;
+            box-shadow: 0px -3px 3px darken($clr-search-background, 15);
+            margin-top: 20px;           
+        }
+        &__icon{
+            position: absolute;
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+    }
+    &_h1{
+        width: 70%;
+        margin-top: 1.5em;
+        font-family: roboto;
+        font-weight: 900;
+        font-size: 1.8em;
+    }    
+    &_h2{
+        width: 90%;
+        font-weight: lighter;
+        font-size: 1.3em;
+    }
+    &_button{
+        background-color: $clr-primary;
+        color: $clr-background;
+        height: 3em;
+        font-weight: 700;
+        font-size: 1.3em;
+        border-style: none;
+        border-radius: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+
+
