@@ -5,11 +5,15 @@
     margin-top: $header-margin;
     background-color: $clr-background;
     text-align: center;    
-    width: 100%;
     &_search{
+        display: inline-block;
+        position: relative;
+        //border: 2px solid black;
+        width: 100%;
         &__input{
             background-color: $clr-search-background;
             min-height: 2.5em;
+            width: 100%;
             text-align: center;
             border: none;
             font-size: 1.2em;
@@ -19,34 +23,42 @@
         }
         &__icon{
             position: absolute;
-            margin-top: 30px;
-            margin-left: 30px;
+            margin-top: 35px;
+            margin-left: 25vw;
+            font-size: 1.2em;
         }
     }
-    &_h1{
-        width: 70%;
-        margin-top: 1.5em;
-        font-family: roboto;
-        font-weight: 900;
-        font-size: 1.8em;
-    }    
-    &_h2{
-        width: 90%;
-        font-weight: lighter;
-        font-size: 1.3em;
-    }
-    &_button{
-        background-color: $clr-primary;
-        color: $clr-background;
-        height: 3em;
-        font-weight: 700;
-        font-size: 1.3em;
-        border-style: none;
-        border-radius: 2em;
-        padding-left: 2em;
-        padding-right: 2em;
+    &_titles{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $clr-titles-background;
+        padding-bottom: 4em;   
+        &__h1{
+            width: 70%;
+            margin-top: 1.5em;
+            font-family: roboto;
+            font-weight: 900;
+            font-size: 1.8em;
+        }    
+        &__h2{
+            width: 90%;
+            font-weight: lighter;
+            font-size: 1.3em;
+        }
+        &__button{
+            background: linear-gradient(175deg, $clr-secondary, $clr-primary);
+            color: $clr-background;
+            height: 3em;
+            font-weight: 700;
+            font-size: 1.3em;
+            border-style: none;
+            border-radius: 2em;
+            margin-top: 0.8em;
+            padding-left: 2em;
+            padding-right: 2em;
+        }
     }
 }
-
 
 
