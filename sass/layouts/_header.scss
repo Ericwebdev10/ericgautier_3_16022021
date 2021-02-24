@@ -4,11 +4,10 @@
 	align-items: center;
     margin-top: $header-margin;
     background-color: $clr-background;
-    text-align: center;    
+    text-align: center;
     &_search{
         display: inline-block;
         position: relative;
-        //border: 2px solid black;
         width: 100%;
         &__input{
             background-color: $clr-search-background;
@@ -18,7 +17,7 @@
             border: none;
             font-size: 1.2em;
             font-weight: bolder;
-            box-shadow: 0px -3px 3px darken($clr-search-background, 15);
+            box-shadow: 0px -4px 4px darken($clr-search-background, 10);
             margin-top: 20px;           
         }
         &__icon{
@@ -33,18 +32,27 @@
         flex-direction: column;
         align-items: center;
         background-color: $clr-titles-background;
-        padding-bottom: 4em;   
+        padding-bottom: 4em;
+        width: 100%;   
         &__h1{
             width: 70%;
             margin-top: 1.5em;
-            font-family: roboto;
+//            font-family: 'Shrikhand';
             font-weight: 900;
+            //font-weight: bolder;
             font-size: 1.8em;
         }    
         &__h2{
             width: 90%;
             font-weight: lighter;
             font-size: 1.3em;
+        }
+        &__h3{
+            width: 90%;
+            font-size: 1.8em;
+            font-weight: 900;
+            text-align: left;
+            margin-top: 2em;
         }
         &__button{
             background: linear-gradient(175deg, $clr-secondary, $clr-primary);
@@ -59,6 +67,32 @@
             padding-right: 2em;
         }
     }
-}
 
+    &_selection{
+        display: flex;
+        flex-direction: column;
+	    align-items: center;
+        width: 100%;
+        &__button{
+            width: 90%;
+            max-width: 25em;
+            margin-top: 2em;
+            height: 5em;
+            border: none;
+            border-radius: 1.7em;
+            background-color: $clr-titles-background;
+            font-size: 1.2em;
+            font-weight: 900;
+            &:hover{
+//                background-color: lighten($clr-primary, 30);
+                background-color: #f5edff;
+            }
+            &--icon{
+                &:hover{
+                color: $clr-primary;
+                }
+            }    
+        }
+    }
+}
 
