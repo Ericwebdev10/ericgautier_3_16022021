@@ -4,11 +4,10 @@
 	align-items: center;
     margin-top: $header-margin;
     background-color: $clr-background;
-    text-align: center;    
+    text-align: center;
     &_search{
         display: inline-block;
         position: relative;
-        //border: 2px solid black;
         width: 100%;
         &__input{
             background-color: $clr-search-background;
@@ -18,7 +17,7 @@
             border: none;
             font-size: 1.2em;
             font-weight: bolder;
-            box-shadow: 0px -3px 3px darken($clr-search-background, 15);
+            box-shadow: 0px -4px 4px darken($clr-search-background, 10);
             margin-top: 20px;           
         }
         &__icon{
@@ -33,11 +32,12 @@
         flex-direction: column;
         align-items: center;
         background-color: $clr-titles-background;
-        padding-bottom: 4em;   
+        padding-bottom: 4em;
+        width: 100%;   
         &__h1{
             width: 70%;
             margin-top: 1.5em;
-            font-family: roboto;
+//            font-family: 'Shrikhand';
             font-weight: 900;
             font-size: 1.8em;
         }    
@@ -45,6 +45,13 @@
             width: 90%;
             font-weight: lighter;
             font-size: 1.3em;
+        }
+        &__h3{
+            width: 90%;
+            font-size: 1.8em;
+            font-weight: 900;
+            text-align: left;
+            margin-top: 2em;
         }
         &__button{
             background: linear-gradient(175deg, $clr-secondary, $clr-primary);
@@ -57,8 +64,65 @@
             margin-top: 0.8em;
             padding-left: 2em;
             padding-right: 2em;
+            &:hover{
+                cursor: pointer;
+                background: linear-gradient(175deg, $clr-primary, $clr-secondary);
+            }
+        }
+    }
+    &_selection{
+        //display: flex;
+        //flex-direction: column;
+	    //align-items: center;
+        width: 100%;
+        border: 2px solid black; 
+        &_block{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;          
+            border: 2px solid red; 
+            &__button{
+                //position: relative;
+                float: left;
+                width: 90%;
+                min-width: 15em;
+                max-width: 25em;
+                padding-left: 1em;
+                margin-bottom: 1em;
+                height: 5em;
+                text-align: left;
+                border: none;
+                border-radius: 1.7em;
+                background-color: $clr-titles-background;
+                box-shadow: 0px 8px 8px darken($clr-search-background, 3);;
+                font-size: 1.2em;
+                font-weight: 900;
+                &:hover{
+                    cursor: pointer;
+                    background-color: $clr-button-hover;
+                }
+                &--icon{
+                    &:hover{
+                        cursor: pointer;
+                        color: $clr-primary;
+                    }
+                }    
+            }
+            &__number{
+                    //position: relative;
+                    //float: left;
+                    z-index: 2;
+                    width: 1.5em;
+                    height: 1.5em;
+                    font-size: large;
+                    background-color: $clr-primary;
+                    color: $clr-background;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    padding-top: 5px;
+            }
         }
     }
 }
-
 
