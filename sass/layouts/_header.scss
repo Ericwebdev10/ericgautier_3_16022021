@@ -3,49 +3,56 @@
     flex-direction: column;
 	align-items: center;
     margin-top: $header-margin;
-    background-color: $clr-background;
+    background-color: $clr-background-white;
     text-align: center;
-    &_search{
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        &__input{
-            background-color: $clr-search-background;
-            min-height: 2.5em;
-            width: 100%;
-            text-align: center;
-            border: none;
-            font-size: 1.2em;
-            font-weight: bolder;
-            box-shadow: 0px -4px 4px darken($clr-search-background, 10);
-            margin-top: 20px;           
-        }
-        &__icon{
-            position: absolute;
-            margin-top: 35px;
-            margin-left: 25vw;
-            font-size: 1.2em;
-        }
+}
+
+.locate{
+        height: 2.2em;
+        border: none;
+        font-size: 1.2em;
+        font-weight: bolder;
+        background-color: $clr-background-locate;
+        box-shadow: 0px -4px 4px darken($clr-background-locate, 10);
+        margin-top: 20px;           
+}
+
+.hero{
+    text-align: center;
+    background-color: $clr-background-lightgrey;
+    padding-bottom: 4.4em;
+    &__title{
+        width: 70%;
+        margin-top: 1.4em;
+        font-weight: 900;
+        font-size: 1.8em;
     }
-    &_titles{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $clr-titles-background;
-        padding-bottom: 4em;
-        width: 100%;   
-        &__h1{
-            width: 70%;
-            margin-top: 1.5em;
-//            font-family: 'Shrikhand';
-            font-weight: 900;
-            font-size: 1.8em;
-        }    
-        &__h2{
-            width: 90%;
-            font-weight: lighter;
-            font-size: 1.3em;
+    &__subtitle{
+        width: 90%;
+        font-weight: lighter;
+        font-size: 1.3em;
+        margin-top: -10px;
+    }
+    &__button{
+        background: linear-gradient(175deg, $clr-secondary, $clr-primary);
+        color: $clr-background-white;
+        height: 2.9em;
+        font-weight: 700;
+        font-size: 1.3em;
+        border-style: none;
+        border-radius: 2em;
+        margin-top: 0.8em;
+        padding-left: 2em;
+        padding-right: 2em;
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(175deg, $clr-primary, $clr-secondary);
         }
+
+    }
+}
+/*
+
         &__h3{
             width: 90%;
             font-size: 1.8em;
@@ -120,5 +127,5 @@
             }
         }
     }
-}
+*/
 
