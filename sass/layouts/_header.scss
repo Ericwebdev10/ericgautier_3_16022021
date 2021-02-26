@@ -14,7 +14,6 @@
         font-weight: bolder;
         background-color: $clr-background-locate;
         @extend %boxshadow-locate;
-        //box-shadow: 0px -4px 4px darken($clr-background-locate, 10);
         margin-top: 20px;           
 }
 
@@ -63,7 +62,7 @@
     &__list{
         &--background{
             &::before {
-                background: $clr-step-button-hover;
+                background: $clr-step-button-hover;//doesn't work
                 color: $clr-primary;
             }
         }
@@ -92,7 +91,7 @@ ol.helper__list {
         position: relative;
         &::before,
         &::after {
-        background: $clr-primary; //linear-gradient(175deg, $clr-primary, $clr-secondary);
+        background: $clr-primary;
         color: $clr-background-white;
         border-radius: 1rem;
         content: '';
