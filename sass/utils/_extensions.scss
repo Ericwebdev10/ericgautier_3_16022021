@@ -1,0 +1,10 @@
+
+%boxshadow-locate {
+    box-shadow: 0px -4px 4px darken($clr-background-locate, 10);
+}
+%boxshadow-light {
+    box-shadow: 0px 8px 8px darken($clr-background-lightgrey, 3);
+}
+%boxshadow-mid {
+    box-shadow: 0px 8px 8px darken($clr-background-lightgrey, 15);
+}
