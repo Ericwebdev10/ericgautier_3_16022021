@@ -5,6 +5,15 @@
     margin-top: $header-margin;
     background-color: $clr-background-white;
     text-align: center;
+    &__arrow{
+        font-size: 1.5em;
+        position: absolute;
+        left: 20px;
+        color: black;
+        &--hidden{
+            visibility: hidden;
+        }
+    }
 }
 
 .locate{
