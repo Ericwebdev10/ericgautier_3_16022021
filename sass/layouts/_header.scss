@@ -59,14 +59,6 @@
         text-align: left;
         margin-top: 1.7em;
     }
-    &__list{
-        &--background{
-            &::before {
-                background: $clr-step-button-hover;//doesn't work
-                color: $clr-primary;
-            }
-        }
-    }
 }
 
 *,
@@ -91,16 +83,16 @@ ol.helper__list {
         position: relative;
         &::before,
         &::after {
-        background: $clr-primary;
-        color: $clr-background-white;
-        border-radius: 1rem;
-        content: '';
-        width: 1.5em;
-        height: 1.5em;
-        top: 1.5em;
-        left: -0.7em;
-        //overflow: hidden;
-        position: absolute;
+            background: $clr-primary;
+            color: $clr-background-white;
+            border-radius: 1rem;
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            top: 1.5em;
+            left: -0.7em;
+            overflow: hidden;
+            position: absolute;
         }
         &::before {
             align-items: flex-end;
@@ -117,6 +109,7 @@ ol.helper__list {
         }
         &:hover{
             background-color: $clr-step-button-hover;
+            color: $clr-primary;;
         }
     }
 }

@@ -87,10 +87,6 @@ body {
   text-align: left;
   margin-top: 1.7em;
 }
-.helper__list--background::before {
-  background: #f5edff;
-  color: #9356DC;
-}
 
 *,
 *:before,
@@ -122,6 +118,7 @@ ol.helper__list > li::before, ol.helper__list > li::after {
   height: 1.5em;
   top: 1.5em;
   left: -0.7em;
+  overflow: hidden;
   position: absolute;
 }
 ol.helper__list > li::before {
@@ -137,6 +134,7 @@ ol.helper__list > li + li {
 }
 ol.helper__list > li:hover {
   background-color: #f5edff;
+  color: #9356DC;
 }
 
 section {
