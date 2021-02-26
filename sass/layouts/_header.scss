@@ -56,6 +56,7 @@
         &:hover{
             cursor: pointer;
             background: linear-gradient(175deg, $clr-primary, $clr-secondary);
+            @extend %boxshadow-mid;
         }
 
     }
@@ -118,7 +119,8 @@ ol.helper__list {
         }
         &:hover{
             background-color: $clr-step-button-hover;
-            color: $clr-primary;;
+            color: $clr-primary;
+            @extend %boxshadow-mid;
         }
     }
 }

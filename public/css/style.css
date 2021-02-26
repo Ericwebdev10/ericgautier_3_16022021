@@ -6,6 +6,10 @@ ol.helper__list > li::before, ol.helper__list > li {
   box-shadow: 0px 8px 8px #eeeeee;
 }
 
+ol.helper__list > li:hover, .hero__button:hover {
+  box-shadow: 0px 8px 8px #d0d0d0;
+}
+
 /* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
