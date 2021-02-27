@@ -1,0 +1,110 @@
+
+.locate{
+    height: 3.2em;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    padding-top: 1em;
+    background-color: $clr-background-locate;
+    @extend %boxshadow-locate;
+    margin-top: 20px;           
+}
+
+.hero{
+text-align: center;
+background-color: $clr-background-lightgrey;
+padding-bottom: 4.4em;
+&__title{
+    width: 70%;
+    margin-top: 2.3em;
+    font-weight: 900;
+    font-size: 1.8em;
+}
+&__subtitle{
+    width: 90%;
+    font-weight: lighter;
+    font-size: 1.3em;
+    margin-top: -10px;
+}
+&__button{
+    background: linear-gradient(175deg, $clr-secondary, $clr-primary);
+    color: $clr-background-white;
+    height: 2.9em;
+    font-weight: 700;
+    font-size: 1.3em;
+    border-style: none;
+    border-radius: 2em;
+    margin-top: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    &:hover{
+        cursor: pointer;
+        background: linear-gradient(175deg, $clr-primary, $clr-secondary);
+        @extend %boxshadow-mid;
+    }
+
+}
+}
+.helper{
+&__title{
+    width: 90%;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-align: left;
+    margin-top: 1.7em;
+}
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+ol.helper__list {
+counter-reset: counter_ol; 
+list-style: none;
+padding-left: 1rem;
+font-size: 1.2em;
+font-weight: 900;
+> li {
+    background: $clr-background-lightgrey;
+    border-radius: 1.7em;
+    @extend %boxshadow-light;
+    counter-increment: counter_ol;
+    height: 4.5em;
+    padding: 1.5em 3em 1em 1em;
+    position: relative;
+    &::before,
+    &::after {
+        background: $clr-primary;
+        color: $clr-background-white;
+        border-radius: 1rem;
+        content: '';
+        width: 1.5em;
+        height: 1.5em;
+        top: 1.5em;
+        left: -0.7em;
+        overflow: hidden;
+        position: absolute;
+    }
+    &::before {
+        align-items: flex-end;
+        @extend %boxshadow-light;
+        content: counter(counter_ol);
+        display: flex;
+        justify-content: center;
+        padding: 0.125em 0.25em;
+        z-index: 1;
+    }
+
+    + li {
+    margin-top: 2rem;
+    }
+    &:hover{
+        background-color: $clr-step-button-hover;
+        color: $clr-primary;
+        @extend %boxshadow-mid;
+    }
+}
+}

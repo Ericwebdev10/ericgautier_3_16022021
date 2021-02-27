@@ -3,122 +3,15 @@
     flex-direction: column;
 	align-items: center;
     margin-top: $header-margin;
-    background-color: $clr-background;
+    background-color: $clr-background-white;
     text-align: center;
-    &_search{
-        display: inline-block;
-        position: relative;
-        width: 100%;
-        &__input{
-            background-color: $clr-search-background;
-            min-height: 2.5em;
-            width: 100%;
-            text-align: center;
-            border: none;
-            font-size: 1.2em;
-            font-weight: bolder;
-            box-shadow: 0px -4px 4px darken($clr-search-background, 10);
-            margin-top: 20px;           
-        }
-        &__icon{
-            position: absolute;
-            margin-top: 35px;
-            margin-left: 25vw;
-            font-size: 1.2em;
-        }
-    }
-    &_titles{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: $clr-titles-background;
-        padding-bottom: 4em;
-        width: 100%;   
-        &__h1{
-            width: 70%;
-            margin-top: 1.5em;
-//            font-family: 'Shrikhand';
-            font-weight: 900;
-            font-size: 1.8em;
-        }    
-        &__h2{
-            width: 90%;
-            font-weight: lighter;
-            font-size: 1.3em;
-        }
-        &__h3{
-            width: 90%;
-            font-size: 1.8em;
-            font-weight: 900;
-            text-align: left;
-            margin-top: 2em;
-        }
-        &__button{
-            background: linear-gradient(175deg, $clr-secondary, $clr-primary);
-            color: $clr-background;
-            height: 3em;
-            font-weight: 700;
-            font-size: 1.3em;
-            border-style: none;
-            border-radius: 2em;
-            margin-top: 0.8em;
-            padding-left: 2em;
-            padding-right: 2em;
-            &:hover{
-                cursor: pointer;
-                background: linear-gradient(175deg, $clr-primary, $clr-secondary);
-            }
-        }
-    }
-    &_selection{
-        width: 100%;
-        &_block{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;          
-            &__button{
-                //position: relative;
-                float: left;
-                width: 90%;
-                min-width: 15em;
-                max-width: 35em;
-                padding-left: 1em;
-                margin-top: 1em;
-                margin-bottom: 1em;
-                height: 5em;
-                text-align: center;
-                border: none;
-                border-radius: 1.7em;
-                background-color: $clr-titles-background;
-                box-shadow: 0px 8px 8px darken($clr-search-background, 3);
-                font-size: 1.2em;
-                font-weight: 900;
-                &:hover{
-                    cursor: pointer;
-                    background-color: $clr-button-hover;
-                }
-                &--icon{
-                    &:hover{
-                        cursor: pointer;
-                        color: $clr-primary;
-                    }
-                }    
-            }
-            &__number{
-                    //position: relative;
-                    //float: left;
-                    z-index: 2;
-                    width: 1.5em;
-                    height: 1.5em;
-                    font-size: large;
-                    background-color: $clr-primary;
-                    color: $clr-background;
-                    border-radius: 50%;
-                    margin-left: 10px;
-                    padding-top: 5px;
-            }
+    &__arrow{
+        font-size: 1.5em;
+        position: absolute;
+        left: 20px;
+        color: black;
+        &--hidden{
+            visibility: hidden;
         }
     }
 }
-
