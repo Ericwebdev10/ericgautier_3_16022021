@@ -67,44 +67,44 @@ list-style: none;
 padding-left: 1rem;
 font-size: 1.2em;
 font-weight: 900;
-> li {
-    background: $clr-background-lightgrey;
-    border-radius: 1.7em;
-    @extend %boxshadow-light;
-    counter-increment: counter_ol;
-    height: 4.5em;
-    padding: 1.5em 3em 1em 1em;
-    position: relative;
-    &::before,
-    &::after {
-        background: $clr-primary;
-        color: $clr-background-white;
-        border-radius: 1rem;
-        content: '';
-        width: 1.5em;
-        height: 1.5em;
-        top: 1.5em;
-        left: -0.7em;
-        overflow: hidden;
-        position: absolute;
-    }
-    &::before {
-        align-items: flex-end;
+    > li {
+        background: $clr-background-lightgrey;
+        border-radius: 1.7em;
         @extend %boxshadow-light;
-        content: counter(counter_ol);
-        display: flex;
-        justify-content: center;
-        padding: 0.125em 0.25em;
-        z-index: 1;
-    }
+        counter-increment: counter_ol;
+        height: 4.5em;
+        padding: 1.5em 3em 1em 1em;
+        position: relative;
+        &::before,
+        &::after {
+            background: $clr-primary;
+            color: $clr-background-white;
+            border-radius: 1rem;
+            content: '';
+            width: 1.5em;
+            height: 1.5em;
+            top: 1.5em;
+            left: -0.7em;
+            overflow: hidden;
+            position: absolute;
+        }
+        &::before {
+            align-items: flex-end;
+            @extend %boxshadow-light;
+            content: counter(counter_ol);
+            display: flex;
+            justify-content: center;
+            padding: 0.125em 0.25em;
+            z-index: 1;
+        }
 
-    + li {
-    margin-top: 2rem;
+        + li {
+        margin-top: 2rem;
+        }
+        &:hover{
+            background-color: $clr-step-button-hover;
+            color: $clr-primary;
+            @extend %boxshadow-mid;
+        }
     }
-    &:hover{
-        background-color: $clr-step-button-hover;
-        color: $clr-primary;
-        @extend %boxshadow-mid;
-    }
-}
 }
