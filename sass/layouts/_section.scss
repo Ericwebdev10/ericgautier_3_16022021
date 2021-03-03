@@ -32,9 +32,10 @@ section{
     position: relative; //needed for the "like" and "new" item position in absolute
     text-decoration: none;
     color: black;
+    //z-index: 0;
     &:hover{
         @extend %boxshadow-mid;
-        transform: scale(1.02)
+        transform: scale(1.01)
     }
     &__image{
         object-fit: cover;  // to use portion of the image
@@ -65,21 +66,5 @@ section{
         font-weight: 900;
         top: 1em;
         right: 1em;
-    }
-    &__like{
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        right: 30px;
-        top: 235px;       
-        font-size: 1.8em;
-        color: $clr-primary;
-        //linear-gradient(175deg, $clr-primary, $clr-secondary);;
-        &:hover{
-            cursor: pointer;
-            //color: $clr-secondary;
-            background-clip: text;
-            background: linear-gradient(175deg, $clr-primary, $clr-secondary);
-        }
     }
 }
