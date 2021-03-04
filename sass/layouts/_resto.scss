@@ -54,16 +54,23 @@
     margin-top: 1em;
     background-color: $clr-background-white;
     border-radius: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+//    border: 2px solid red;   
     &__title{
+//        border: 2px solid blue;   
         font-weight: bolder;
         margin: 0.5em;
         padding-top: 0.5em;
     }
     &__info{
+//        border: 2px solid green;   
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        width: 100%;
         &__comment{
             white-space: nowrap;
             overflow: hidden;
@@ -76,9 +83,25 @@
             margin-right: 1em;
         }
     }
+    &__sub{
+//        border: 2px solid black;
+        width: 100%; 
+    }
+    &__checkbox{    
+//        border: 2px solid black;   
+        color: white;
+        background: $clr-tertiary;
+        width: 60px;
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+//        display: none;
+    }
 }
 
-.btn-order{ //for design see _article/hero__button 
+.btn-order{ //for features see _article/hero__button 
     display: flex;
     justify-content: center;
     background-color: $clr-background-lightgrey;
