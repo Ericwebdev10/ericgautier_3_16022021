@@ -10,24 +10,24 @@
         font-size: 1.8em;
         color: gray;
         &:hover {
-            &+ .heart__stroke {
+            &+ .heart__stroke { // + :si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
                 animation: heart_scale 1000ms ease-out forwards;
             } 
         }
     }
     &__stroke{
-            position: absolute;
-            z-index: 1; 
-            width: 30px;
-            height: 30px;
-            right: 30px;
-            top: 235px;
-            font-size: 1.8em;
-            color: gray;
-            transform: scale(0);
-            background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; 
+        position: absolute;
+        z-index: 1; 
+        width: 30px;
+        height: 30px;
+        right: 30px;
+        top: 235px;
+        font-size: 1.8em;
+        color: gray;
+        transform: scale(0);
+        background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }  
     
@@ -35,7 +35,7 @@
     0% {
       transform: scale(0); 
     }
-    90% {
+    70% {
       transform: scale(1); 
     }
     100% {

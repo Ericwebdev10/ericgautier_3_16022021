@@ -13,6 +13,7 @@
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
     top: -3em;
+//    min-height: 400px;
 //            border: 2px solid blue;
     display: flex;
     flex-direction: row;
@@ -40,8 +41,10 @@
     position: relative;
     line-height: 1em; 
     width: 95%;
-    max-width: 400px; 
-//    border: 2px solid red;
+    max-width: 400px;
+//    opacity: 1;
+//    visibility: hidden;
+//    display: none;
     &::before {
         position: absolute;
         left: 0;
@@ -80,7 +83,7 @@
     }
 }
 
-.btn-order{
+.btn-order{ //for design see _article/hero__button 
     display: flex;
     justify-content: center;
     background-color: $clr-background-lightgrey;
