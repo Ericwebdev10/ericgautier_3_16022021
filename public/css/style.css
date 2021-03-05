@@ -302,6 +302,7 @@ section {
 }
 
 .dish {
+  cursor: pointer;
   margin-top: 1em;
   background-color: #FFFFFF;
   border-radius: 1em;
@@ -338,12 +339,11 @@ section {
 .dish__checkbox {
   color: white;
   background: #99E2D0;
+  min-height: 1em;
   width: 60px;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: none;
 }
 
 .btn-order {
@@ -439,8 +439,33 @@ section {
     opacity: 1;
   }
 }
-.dish:hover {
-  color: blue;
+.dish:hover .dish__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transform-origin: right;
+  animation: checkbox_scale 0.6s cubic-bezier(0.32, 0, 0.07, 1);
+}
+.dish:hover .dish__checkbox span {
+  animation: check_circle_rotate 1s cubic-bezier(0.32, 0, 0.07, 1);
+}
+
+@keyframes checkbox_scale {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes check_circle_rotate {
+  0% {
+    transform: rotate(deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

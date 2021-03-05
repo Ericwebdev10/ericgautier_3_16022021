@@ -51,6 +51,7 @@
       }
 }
 .dish{
+    cursor: pointer;
     margin-top: 1em;
     background-color: $clr-background-white;
     border-radius: 1em;
@@ -84,20 +85,16 @@
         }
     }
     &__sub{
-//        border: 2px solid black;
         width: 100%; 
     }
-    &__checkbox{    
-//        border: 2px solid black;   
+    &__checkbox{     
         color: white;
         background: $clr-tertiary;
+        min-height: 1em;
         width: 60px;
         border-top-right-radius: 1em;
         border-bottom-right-radius: 1em;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-//        display: none;
+        display: none;
     }
 }
 
