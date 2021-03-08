@@ -110,6 +110,10 @@ body {
 }
 
 ol.helper__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   counter-reset: counter_ol;
   list-style: none;
   padding-left: 1rem;
@@ -117,6 +121,7 @@ ol.helper__list {
   font-weight: 900;
 }
 ol.helper__list > li {
+  margin: 2em;
   background: #F6F6F6;
   border-radius: 1.7em;
   counter-increment: counter_ol;

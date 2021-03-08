@@ -62,12 +62,17 @@ box-sizing: border-box;
 }
 
 ol.helper__list {
-counter-reset: counter_ol; 
-list-style: none;
-padding-left: 1rem;
-font-size: 1.2em;
-font-weight: 900;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    counter-reset: counter_ol; 
+    list-style: none;
+    padding-left: 1rem;
+    font-size: 1.2em;
+    font-weight: 900;
     > li {
+        margin: 2em;
         background: $clr-background-lightgrey;
         border-radius: 1.7em;
         @extend %boxshadow-light;
