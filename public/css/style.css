@@ -13,9 +13,9 @@
 /* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
-  src: url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot");
+  src: url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2") format("woff2"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff") format("woff"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf") format("truetype"), url("/public/fonts/roboto-v20-latin/roboto-v20-latin-regular.svg#Roboto") format("svg");
+  src: local(""), url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff2") format("woff2"), url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.woff") format("woff"), url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.ttf") format("truetype"), url("../../public/fonts/roboto-v20-latin/roboto-v20-latin-regular.svg#Roboto") format("svg");
   /* Legacy iOS */
 }
 /* shrikhand-regular - latin */
@@ -23,9 +23,9 @@
   font-family: "Shrikhand";
   font-style: normal;
   font-weight: 400;
-  src: url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot");
+  src: url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot");
   /* IE9 Compat Modes */
-  src: local(""), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff2") format("woff2"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff") format("woff"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.ttf") format("truetype"), url("/public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
+  src: local(""), url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff2") format("woff2"), url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.woff") format("woff"), url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.ttf") format("truetype"), url("../../public/fonts/shrikhand-v6-latin/shrikhand-v6-latin-regular.svg#Shrikhand") format("svg");
   /* Legacy iOS */
 }
 body {
