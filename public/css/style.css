@@ -32,6 +32,93 @@ body {
   font-family: "Roboto", "Shrikhand", Arial, sans-serif;
 }
 
+.container_loading {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
+}
+.container_loading__spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(175deg, #9356DC, #FF79DA);
+  font-size: 2em;
+  font-family: "Shrikhand";
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  animation: loading_spinner 3s cubic-bezier(0.57, -0.19, 0.32, 1) both;
+}
+
+.container_page {
+  position: absolute;
+  top: 0px;
+  animation: page_container 0.5s 3.2s ease-in-out both;
+}
+
+@keyframes loading_spinner {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0;
+    color: black;
+    text-shadow: 0px 8px 8px white;
+  }
+  20% {
+    transform: rotate(100deg);
+    opacity: 0.2;
+    color: white;
+    text-shadow: 0px 8px 8px black;
+  }
+  40% {
+    transform: rotate(150deg);
+    opacity: 0.4;
+    color: black;
+    text-shadow: 0px 8px 8px white;
+  }
+  60% {
+    transform: rotate(360deg);
+    opacity: 0.8;
+    color: white;
+    text-shadow: 0px 8px 8px black;
+  }
+  70% {
+    opacity: 1;
+    color: black;
+    text-shadow: 0px 8px 8px white;
+  }
+  80% {
+    opacity: 1;
+    color: white;
+    text-shadow: 0px 8px 8px black;
+  }
+  90% {
+    opacity: 1;
+    color: black;
+    text-shadow: 0px 8px 8px white;
+  }
+  95% {
+    text-shadow: 0px 6px 6px black;
+    opacity: 0.4;
+  }
+  98% {
+    text-shadow: 0px 4px 4px black;
+    opacity: 0.2;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes page_container {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .header {
   display: flex;
   flex-direction: column;
