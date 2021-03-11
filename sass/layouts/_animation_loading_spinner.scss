@@ -14,7 +14,6 @@
         font-family: 'Shrikhand';
         width: 7em;
         height: 7em;
-        //padding: 2em;
         border-radius: 50%;
         animation: loading_spinner 3s cubic-bezier(.57,-0.19,.32,1) both;
       }
@@ -23,7 +22,7 @@
 .container_page{
     position: absolute;
     top: 0px;
-    animation: page_container 0.5s 3.2s ease-in-out both;
+    animation: page_container 0.8s 3.2s ease-in-out both;
   }
   
   @keyframes loading_spinner {
@@ -33,15 +32,27 @@
         color: black;
         text-shadow: 0px 8px 8px white;
     }
-    20% {
-        transform: rotate(100deg);
+    10% {
+        transform: rotate(30deg);
         opacity: 0.2;
         color: white;
         text-shadow: 0px 8px 8px black;
     }
-    40% {
-        transform: rotate(150deg);
+    20% {
+        transform: rotate(60deg);
         opacity: 0.4;
+        color: black;
+        text-shadow: 0px 8px 8px white;
+    }
+    30% {
+        transform: rotate(90deg);
+        opacity: 0.6;
+        color: white;
+        text-shadow: 0px 8px 8px black;
+    }
+    40% {
+        transform: rotate(120deg);
+        opacity: 0.7;
         color: black;
         text-shadow: 0px 8px 8px white;
     }
@@ -58,21 +69,26 @@
     }
     80% {
         opacity: 1;
-        color: white;
-        text-shadow: 0px 8px 8px black;
+        color: black;
+        //text-shadow: 0px 8px 8px black;
+        transform: scale(1.5); 
     }
     90% {
         opacity: 1;
         color: black;
-        text-shadow: 0px 8px 8px white;
+        //text-shadow: 0px 8px 8px white;
+        transform: scale(1.5);
     }
     95% {
-        text-shadow: 0px 6px 6px black;
-        opacity: 0.4;
+//        text-shadow: 0px 6px 6px black;
+        //opacity: 0.4;
+        background: white;
+        transform: scale(1.5);
     }    
     98% {
-        text-shadow: 0px 4px 4px black;
-        opacity: 0.2;
+        //text-shadow: 0px 2px 2px black;
+        //opacity: 0.2;
+        background: white;
     }
     100% {
         transform: rotate(360deg);
@@ -84,6 +100,9 @@
     0% {
         opacity: 0;
     }
+    50% {
+        opacity: 0.3;
+    }    
     100% {
         opacity: 1;
     }
