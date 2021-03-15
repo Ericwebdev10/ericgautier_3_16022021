@@ -26,6 +26,7 @@
         color: gray;
         transform: scale(0);
         background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

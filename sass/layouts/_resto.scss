@@ -58,12 +58,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
 //    border: 2px solid red;   
     &__title{
 //        border: 2px solid blue;   
         font-weight: bolder;
         margin: 0.5em;
         padding-top: 0.5em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     &__info{
 //        border: 2px solid green;   
@@ -72,6 +79,9 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &__comment{
             white-space: nowrap;
             overflow: hidden;

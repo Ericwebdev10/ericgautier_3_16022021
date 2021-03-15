@@ -419,11 +419,17 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__title {
   font-weight: bolder;
   margin: 0.5em;
   padding-top: 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__info {
   display: flex;
@@ -431,6 +437,9 @@ section {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .dish__info__comment {
   white-space: nowrap;
@@ -489,6 +498,7 @@ section {
   color: gray;
   transform: scale(0);
   background: -webkit-linear-gradient(175deg, #9356DC, #FF79DA);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
