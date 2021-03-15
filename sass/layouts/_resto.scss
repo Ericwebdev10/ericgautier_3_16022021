@@ -38,7 +38,10 @@
     position: relative;
     line-height: 1em; 
     width: 95%;
-    max-width: 400px;
+//    max-width: 400px;
+    @media (min-width: 768px){
+        width: 400px;
+    }    
     opacity: 0;
     &::before { //for partial underline
         position: absolute;

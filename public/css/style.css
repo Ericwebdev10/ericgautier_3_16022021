@@ -398,8 +398,12 @@ section {
   position: relative;
   line-height: 1em;
   width: 95%;
-  max-width: 400px;
   opacity: 0;
+}
+@media (min-width: 768px) {
+  .dishes {
+    width: 400px;
+  }
 }
 .dishes::before {
   position: absolute;
