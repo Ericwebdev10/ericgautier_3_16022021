@@ -63,11 +63,8 @@
     justify-content: space-between;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-
-//    border: 2px solid red;   
-    &__title{
-//        border: 2px solid blue;   
+    text-overflow: ellipsis;   
+    &__title{   
         font-weight: bolder;
         margin: 0.5em;
         padding-top: 0.5em;
@@ -75,8 +72,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    &__info{
-//        border: 2px solid green;   
+    &__info{  
         display: flex;
         flex-direction: row;
         align-items: center;
