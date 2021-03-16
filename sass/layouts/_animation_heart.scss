@@ -1,35 +1,67 @@
 
 .heart{
-    &__fill{
-        position: absolute;
-        z-index: 2;    
-        width: 30px;
-        height: 30px;
-        right: 30px;
-        top: 235px;
-        font-size: 1.8em;
-        color: gray;
-        &:hover {
-            &+ .heart__stroke { // + :si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
-                animation: heart_scale 1000ms ease-out forwards;
-            } 
-        }
-    }
-    &__stroke{
-        position: absolute;
-        z-index: 1; 
-        width: 30px;
-        height: 30px;
-        right: 30px;
-        top: 235px;
-        font-size: 1.8em;
-        color: gray;
-        transform: scale(0);
-        background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
+  &__fill{
+      position: absolute;
+      z-index: 2;    
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 235px;
+      font-size: 1.8em;
+      color: gray;
+      &:hover {
+          &+ .heart__stroke { // + :si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
+              animation: heart_scale 1000ms ease-out forwards;
+          } 
+      }
+  }
+  &__stroke{
+      position: absolute;
+      z-index: 1; 
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      top: 235px;
+      font-size: 1.8em;
+      color: gray;
+      transform: scale(0);
+      background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
 //        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+}  
+.heart2{
+  &__fill{
+      position: absolute;
+      z-index: 2;    
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      top: 30px;
+      font-size: 1em;
+      color: black;
+      &:hover {
+          &+ .heart2__stroke { // + :si le deuxième élément est immédiatement précédé du premier, alors il adoptera la couleur spécifiée.
+              animation: heart_scale 1000ms ease-out forwards;
+          } 
+      }
+  }
+  &__stroke{
+      position: absolute;
+      z-index: 1; 
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      top: 30px;
+      font-size: 1em;
+      color: black;
+      transform: scale(0);
+      background: -webkit-linear-gradient(175deg, $clr-primary, $clr-secondary);
+//        background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
 }  
     
 @keyframes heart_scale {
