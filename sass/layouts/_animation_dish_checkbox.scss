@@ -1,18 +1,31 @@
 //009_sass_transform_rotation_scale
 
 .dish{
-    &:hover .dish__checkbox{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        transform-origin: right;
-        animation: checkbox_scale 0.6s cubic-bezier(0.32, 0, 0.07, 1);
-        span {
-            animation: check_circle_rotate 1s cubic-bezier(0.32, 0, 0.07, 1);
-        }
+  &:hover .dish__checkbox{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transform-origin: right;
+      animation: checkbox_scale 0.6s cubic-bezier(0.32, 0, 0.07, 1);
+      span {
+          animation: check_circle_rotate 1s cubic-bezier(0.32, 0, 0.07, 1);
+      }
+  }
+  &:hover .dish__info__comment{
+    max-width: 210px;
+    @media (min-width: 576px){
+      max-width: 400px;
+    }    
+  }
+  &:hover .dish__title{
+    max-width: 210px;
+    @media (min-width: 576px){
+      max-width: 400px;
     }
+  }    
 }
+
 @keyframes checkbox_scale {
     0% {
       transform: scaleX(0); 

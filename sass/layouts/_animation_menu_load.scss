@@ -4,14 +4,17 @@
     position:relative;
     &--1{ 
         overflow:hidden;
+//        animation: loading 0.8s 0s linear forwards;
         animation: loading 0.8s 0s linear;
         }
     &--2{ 
         overflow:hidden;
-         animation: loading 0.8s 0.8s linear;
+//        animation: loading 0.8s 0.8s linear forwards;
+        animation: loading 0.8s 0.8s linear;
     }
     &--3{ 
         overflow:hidden;
+//        animation: loading 0.8s 1.6s linear forwards;
         animation: loading 0.8s 1.6s linear;
     }
 }
